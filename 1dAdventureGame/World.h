@@ -1,7 +1,9 @@
 #pragma once
 
 class World {
-private:  // Functions
-
-private: // Variables
+public:  // Functions
+	void setAllZero();
+public: // Variables
+	static const int worldSize = 100;
+	char world[worldSize];
 };
