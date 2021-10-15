@@ -5,6 +5,7 @@
 void process();
 void drawScreen();
 World wd;
+World::UI ui;
 int main()
 {
 	wd.setAllZero();
@@ -24,7 +25,6 @@ void process()
 
 void drawScreen()
 {
-	for (int i = 0; i < wd.worldSize; i++) {
-		std::cout << wd.world[i];
-	}
+	ui.drawUI();
+	wd.drawWorld();
 }
